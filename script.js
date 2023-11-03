@@ -64,8 +64,16 @@ closeButton.addEventListener('click', function () {
 
 
 
+// FOR MENU-BTN
 
+document.getElementById("openMenu").addEventListener("click", function () {
+    document.getElementById("mobileMenu").style.display = "block";
+    document.getElementById("openMenu").style.display = "none";
+    document.getElementById("closeMenu").style.display = "inline-block";
+});
 
-
-//filter button scroll up
-
+document.getElementById("closeMenu").addEventListener("click", function () {
+    document.getElementById("mobileMenu").style.display = "none";
+    document.getElementById("openMenu").style.display = "inline-block";
+    document.getElementById("closeMenu").style.display = "none";
+});
