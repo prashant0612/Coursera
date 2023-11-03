@@ -188,6 +188,7 @@ html {
     font-size: 3rem;
 }
 
+
 .main-content{
     background-color: rgba(128, 128, 128, 0.146);
 }
@@ -268,15 +269,49 @@ html {
 }
 
 .box-img{
-    width: 26rem;
-    height: 45rem;
+    border: 0.1rem solid rgba(128, 128, 128, 0.315);
+    width: 28.3rem;
+    height: 16rem;
     background-size: cover;
-    margin-bottom: 1rem;
     border-radius: 0.5rem;
 }
+.line1{
+    padding-top: 1rem;
+    display: flex;
+}
+.line2{
+    color: rgba(0, 0, 0, 0.828);
+    padding-top: 1.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.line3{
+    font-size: 1.2rem;
+    padding-top: 1.5rem;
+}
+.line4{
+    font-size: 1.5rem;
+    padding-top: 1rem;
+}
+.line5{
+    padding-top: 1rem;
+    display: flex;
+}
+.line6{
+    font-size: 1.3rem;
+    padding-top: 1rem;
+    color: rgba(128, 128, 128, 0.87);
+}
+.line1 p{
+    color: rgba(128, 128, 128, 0.887);
+    padding-left: 1rem;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center ;
+}
 .box-content{
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    margin-left: 0.1rem;
+    margin-right: 1rem;
 }
 
 #no-matching-cards{
@@ -385,14 +420,70 @@ html {
 
 
 
-/*                         FOR NAVBAR                        */
+/*                         FOR MENU-BAR                        */
+
+@media screen and (min-width: 769px){
+    .menu-button {
+        display: none;
+    }
+    #openMenu {
+        display: none;
+    }
+
+    #closeMenu {
+        display: none;
+    }
+
+    #mobileMenu {
+        display: block;
+    }
+}
+@media screen and (max-width: 768px){
+    .menu-button{
+        display: block;
+    }
+    #openMenu {
+        font-size: 2.3rem;
+        display: inline-block;
+    }
+    .close-btn{
+        padding-right: 2rem;
+        display: flex;
+        justify-content: space-evenly;
+       
+    }
+    #closeMenu {
+        font-size: 2.5rem;
+        display: none;
+    }
+
+    #mobileMenu {
+        width: 100%;
+        height: 100%;
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+
+    }
+    .list{
+        padding-top: 7rem;
+        background-color: white;
+        width: 100%;
+        height: 100%;
+    }
+    .list p{
+        padding: 3rem;
+        font-size: 2rem;
+    }
+}
+
 
 @media (max-width: 768px){
     .nav-logo{
-        width: 100%;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-evenly;
+        width: 93%;
     }
     .menu-container{
         display: none;
@@ -537,3 +628,8 @@ ul a{
         margin: 0 1px;
     }
 }
+
+/*                      FOR MENU-BTN                             */
+
+
+
