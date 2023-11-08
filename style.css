@@ -13,7 +13,7 @@ html {
 }
 
 .navbar{
-    z-index: 1;   /*By setting a higher z-index for your navbar, it should be displayed above the checkboxes or any other content when you scroll down.*/
+    z-index:20 ;   /*By setting a higher z-index for your navbar, it should be displayed above the checkboxes or any other content when you scroll down.*/
     font-size: 0.4rem;
     width: 100%;
     display: flex;
